@@ -1,0 +1,57 @@
+body, html {
+    height: 100%;
+    background-color: #171616;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+p {
+    font-weight: bold;
+}
+.topnav{ /* add a black background color to the top nav */
+    background-color: #333;
+    overflow: hidden;
+}
+.topnav a { /* style the links inside the nav bar*/
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.topnav a:hover { /* Change the color of links on hover */
+    background: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: #8af67cbf;
+    color: white;
+}
+.hero-text {
+    font-family: 'Courier New', Courier, monospace;
+}
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/cold.jpg");
+  
+    /* Set a specific height */
+    height: 95%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: 40% 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+  
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
